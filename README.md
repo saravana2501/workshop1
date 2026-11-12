@@ -24,6 +24,7 @@ ModifyCountryActivity.java
 4.Updating and Deleting a record.
 
 ### activity_main.xml
+```
 xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -45,7 +46,10 @@ xml
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+```
+
 ### Main_activity.java
+```
 java
 package com.example.workshop;
 
@@ -120,9 +124,10 @@ public class AddCountryActivity extends Activity {
         });
     }
 }
-
+```
 
 ### ModifycountryActivity.java
+```
 java
 package com.example.workshop;
 
@@ -201,10 +206,10 @@ public class ModifyCountryActivity extends Activity {
         });
     }
 }
-
+```
 
 ### CountryListActivity.java
-
+```
 java
 
 package com.example.workshop;
@@ -267,10 +272,10 @@ public class CountryListActivity extends Activity {
         listView.setAdapter(adapter);
     }
 }
-
+```
 
 ### Databasehelper.java
-
+```
 java
 
 package com.example.workshop;
@@ -306,10 +311,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
-
+```
 
 ### DBManager.java
-
+```
 java
 
 package com.example.workshop;
@@ -382,6 +387,7 @@ public class DBManager {
                 new String[]{String.valueOf(id)}) > 0;
     }
 }
+```
 
 ### OUTPUT
 
